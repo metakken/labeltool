@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <title>画像判別例</title>
     <style>
         body {
@@ -23,12 +24,16 @@
 </head>
 <body>
     <h1>画像判別</h1>
-    <img id="image" src="" alt="判別用画像">
+    <img id="image" src="">
+    <div>
+        <input type="text"  id="student_number" size="20" value="" placeholder="学籍番号">
+    </div>
     <div class="buttons">
         <button id="start_Button">始める</button>
         <button id="T_Button" class="hidden">良品</button>
         <button id="F_Button" class="hidden">不良品</button>
         <button id="decision_Button" class="hidden">決定</button>
+        <button id="download_Button" class="hidden">csv</button>
     </div>
     <p id="result"></p>
 
